@@ -35,70 +35,66 @@ Begin by logging into the [Microsoft Entra Admin Center](https://entra.microsoft
 
 <img width="400" height="700" alt="3" src="https://github.com/user-attachments/assets/6341358a-73e7-4fbb-83f3-7089724db88f" />
 
-Click on **New user** to begin creating an internal user. You'll be prompted to enter user details and assign roles.
+Click on **New user** to begin creating an internal user. Enter details such as name, username, and location. Set a temporary password if needed.
 
 ---
 
-### Step 3: Fill in User Details
+### Step 3: Fill in User Details and Assign Roles
 
 <img width="400" height="700" alt="4" src="https://github.com/user-attachments/assets/a220935a-9b14-4af4-8018-340cf74e795a" />
 
-
-Enter details such as name, username, and location. Set a temporary password if needed.
+Provided the new hire its approiate roles. 
 
 ---
 
-### Step 4: Assign Groups or Roles
+### Step 4: Assign license
 
 <img width="400" height="700" alt="5" src="https://github.com/user-attachments/assets/147190e8-1740-487d-a5c6-776e977087ab" />
 
 
-Assign the new user to the appropriate groups and roles based on their responsibilities.
+Assign the new user to the Microsoft Office License. In this case MSOffice E5.
 
 ---
 
-### Step 5: Review and Finalize
+### Step 5: Create Groups in Entra
 
 <img width="400" height="700" alt="6" src="https://github.com/user-attachments/assets/929ce69e-a604-4ac7-815d-782f129ab61d" />
 
-
-Review the information entered. Once confirmed, click **Create** to provision the new user account.
+Created a "Security" Group for provisioning permissions. Also configured the Dynamic membership rule to automatically assign this group if new user meets criteria.
 
 ---
 
-### Step 6: View the New User
+### Step 6: Add an Owner to the Group
 
 <img width="400" height="700" alt="7" src="https://github.com/user-attachments/assets/90794c58-3971-4ea4-b351-ee7e9719b9c4" />
 
 
-After creation, the user appears in the directory. You can now manage their access and security settings.
-
+Confirm the Security Group was added and that Rafael is the owner.
 ---
 
-### Step 7: Enable Security Features
+### Step 7: Confirm Dynamic Rules in effect
 
 <img width="400" height="700" alt="8" src="https://github.com/user-attachments/assets/2bd4135a-6663-4473-8178-f84f7c363762" />
 
 
-You may enforce security defaults, multi-factor authentication (MFA), or conditional access policies for better protection.
-
+Here we can confirm that the Dynamic Rules are working effectively. 
 ---
 
-### Step 8: Test the User Login
+### Step 8: Configure MFA
 
 <img width="400" height="700" alt="9" src="https://github.com/user-attachments/assets/466c4265-326d-4a6f-90bf-cefbd6c3af25" />
 
 
-Perform a login simulation or allow the user to test their credentials. Make sure everything works as expected.
+In this step we enable and enforce MFA for the users. This ensures another layer of security. 
 
 ---
 
-### Step 9: Monitor Activity and Audit Logs
+### Step 9: Configure MFA (Continued)
 
 <img width="400" height="700" alt="10" src="https://github.com/user-attachments/assets/e35581e0-2d02-470c-84d0-430a75711c11" />
 
 
-Use **Sign-in logs** and **Audit logs** to track access attempts, changes, and other administrative actions.
+Create a MFA Policy for conditional access requiring the usage of MFA for authentication. 
 
 ---
 
